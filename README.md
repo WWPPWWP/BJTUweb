@@ -1,11 +1,11 @@
 # BJTUweb-Linux
 
 1.	高级设置 – 系统管理 – 服务
-1.1	 
-1.2	 
-*/10 * * * * /etc/storage/auto_login.sh
+开启SSH
+定时任务 */10 * * * * /etc/storage/auto_login.sh
+
 2.	自定义设置 – 脚本
- 
+开启WAN后
 /etc/storage/auto_login.sh
 
 3.	将脚本上传到路由器
