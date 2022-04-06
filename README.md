@@ -1,4 +1,4 @@
-# BJTUweb-Linux
+# Padavan 路由器设置
 
 1.	高级设置 – 系统管理 – 服务
 开启SSH
