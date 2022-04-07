@@ -2,11 +2,11 @@
 
 1.	高级设置 – 系统管理 – 服务
 开启SSH
-定时任务 */10 * * * * /etc/storage/auto_login.sh
+定时任务 */10 * * * * /etc/storage/auto_login.sh username password
 
 2.	自定义设置 – 脚本
 开启WAN后
-/etc/storage/auto_login.sh
+/etc/storage/auto_login.sh username password
 
 3.	将脚本上传到路由器
 CMD 管理员身份
@@ -21,5 +21,3 @@ chmod +x auto_login.sh
 exit
 
 4.	系统管理 - 恢复/导出/上传设置
- 
- 
