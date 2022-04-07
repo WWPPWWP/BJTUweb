@@ -7,15 +7,12 @@ then
 logger "未接入校园网，不可认证"
 else
 
-username='19112222'
-password='666666'
-
 STATUS1=$(curl -s 10.10.42.3 | grep stime)
 
 if [ "$STATUS1" = "" ]
 then
-logger "已接入校园网，但尚未认证，尝试自动认证【${username}】"
-STATUS2=$(curl -s "http://10.10.43.3/drcom/login?callback=dr1649207599798&DDDDD=${username}&upass=${password}&0MKKey=123456" | grep stime)
+logger "已接入校园网，但尚未认证，尝试自动认证【$1】"
+STATUS2=$(curl -s "http://10.10.43.3/drcom/login?callback=dr1649207599798&DDDDD=$1&upass=$2&0MKKey=123456" | grep stime)
 
 if [ "$STATUS2" = "" ]
 then
