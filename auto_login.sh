@@ -18,7 +18,7 @@ if [ "$STATUS2" = "" ]
 then
 logger "认证失败"
 else
-logger "认证成功"
+logger "认证成功【$STATUS2】"
 fi
 
 else
