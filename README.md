@@ -1,15 +1,21 @@
 # Padavan 路由器设置
 
 1.	高级设置 – 系统管理 – 服务
+
 1.1 开启SSH
+
 1.2 定时任务
+
 */30 * * * * /etc/storage/auto_login.sh username password
 
 2.	自定义设置 – 脚本
+
 开启WAN后执行
+
 /etc/storage/auto_login.sh username password
 
 3.	将脚本上传到路由器
+
 CMD 管理员身份
 ssh admin@192.168.123.1
 cd /etc/storage
